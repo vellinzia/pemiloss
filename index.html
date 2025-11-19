@@ -1,1 +1,171 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemilihan Ketua OSIS SMKN 1 Ampelgading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFD6E0 0%, #FF69B4 100%);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #8B005A;
+        }
+        .container {
+            max-width: 700px;
+            background: #fff5fa;
+            margin: 40px auto;
+            padding: 32px 28px;
+            border-radius: 18px;
+            box-shadow: 0 4px 36px 0 rgba(244, 101, 166, 0.19);
+        }
+        h1 {
+            text-align: center;
+            color: #FF69B4;
+            font-size: 2.1em;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #8B005A;
+            margin-bottom: 26px;
+            font-size: 1.14em;
+        }
+        .kandidat-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        .kandidat {
+            flex: 1 1 30%;
+            background: #ffe3ed;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 0 10px 20px 0;
+            box-shadow: 0 1px 12px 0 rgba(244, 101, 166, 0.13);
+            text-align: center;
+        }
+        .kandidat:last-child {
+            margin-right: 0;
+        }
+        .kandidat img {
+            width: 88px;
+            height: 88px;
+            border-radius:50%;
+            object-fit: cover;
+            border: 2px solid #FFB6D9;
+            margin-bottom: 12px;
+        }
+        .kandidat-nama {
+            font-size: 1.13em;
+            color: #D21367;
+            font-weight: bold;
+        }
+        .kandidat-deskripsi {
+            font-size: 0.98em;
+            color: #730043;
+            margin-bottom: 8px;
+        }
+        .hasil-voting {
+            background: #fff;
+            border-radius: 10px;
+            padding: 18px 24px;
+            box-shadow: 0 4px 24px 0 rgba(244, 101, 166, 0.12);
+        }
+        .hasil-voting-title {
+            font-size: 1.15em;
+            font-weight: bold;
+            color: #FF69B4;
+        }
+        .votes-table {
+            width: 100%;
+            margin-top: 9px;
+            border-collapse: collapse;
+        }
+        .votes-table th, .votes-table td {
+            padding: 7px 11px;
+            text-align: left;
+            border-bottom: 1px solid #FFD6E0;
+        }
+        .votes-table th {
+            background: #ffe1e9;
+            color: #B2005C;
+        }
+        .votes-table .winner {
+            background: #FFB6D9;
+            color: #730043;
+            font-weight: bold;
+        }
+        @media (max-width: 630px) {
+            .container {
+                padding: 15px 3vw;
+            }
+            .kandidat-list {
+                flex-direction: column;
+            }
+            .kandidat {
+                margin-bottom: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pemilihan Ketua OSIS</h1>
+        <div class="subtitle">SMKN 1 Ampelgading<br>Tahun 2025</div>
+        <div class="kandidat-list">
+            <div class="kandidat">
+                <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Kandidat 1">
+                <div class="kandidat-nama">Ahmad Pratama</div>
+                <div class="kandidat-deskripsi">
+                    Visioner, disiplin, aktif dalam kegiatan OSIS dan berharap membawa inovasi baru.
+                </div>
+            </div>
+            <div class="kandidat">
+                <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Kandidat 2">
+                <div class="kandidat-nama">Putri Saraswati</div>
+                <div class="kandidat-deskripsi">
+                    Ramah, berpengalaman, peduli terhadap lingkungan sekolah, dan mengutamakan kebersamaan.
+                </div>
+            </div>
+            <div class="kandidat">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Kandidat 3">
+                <div class="kandidat-nama">Rendy Aditya</div>
+                <div class="kandidat-deskripsi">
+                    Kreatif, berwawasan, aktif di ekstrakurikuler, ingin membangun OSIS yang dinamis.
+                </div>
+            </div>
+        </div>
+        <div class="hasil-voting">
+            <div class="hasil-voting-title">Hasil Voting Pemilihan</div>
+            <table class="votes-table">
+                <tr>
+                    <th>Nama Kandidat</th>
+                    <th>Jumlah Suara</th>
+                    <th>Persentase</th>
+                </tr>
+                <tr class="winner">
+                    <td>Putri Saraswati</td>
+                    <td>314</td>
+                    <td>46%</td>
+                </tr>
+                <tr>
+                    <td>Ahmad Pratama</td>
+                    <td>205</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Rendy Aditya</td>
+                    <td>173</td>
+                    <td>24%</td>
+                </tr>
+            </table>
+            <div style="margin-top: 17px; color: #B2005C; font-size: 1.05em;">
+                <strong>Selamat kepada Putri Saraswati</strong> sebagai Ketua OSIS terpilih SMKN 1 Ampelgading tahun 2025!
+            </div>
+        </div>
+    </div>
+</body>
+</html>
